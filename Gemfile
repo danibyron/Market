@@ -30,7 +30,7 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'materialize-sass'
 
-gem 'jquery-rails'
+gem 'devise'
 
 group :development, :test do
   
