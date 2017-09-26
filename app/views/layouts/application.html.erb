@@ -3,9 +3,10 @@
   <head>
     <title>Market</title>
     <%= csrf_meta_tags %>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-    <%= stylesheet_link_tag 'defaults', media: 'all', 'data-turbolinks-track' => true %>
- <%= javascript_include_tag 'defaults', 'data-turbolinks-track' => true %>
   </head>
 
   <p class ="notice" > <%= notice %> </p>
@@ -13,8 +14,15 @@
 
 
   <body>
-  	<%= link_to "home", root_path %>
-	<%= link_to "about", about_path %>
-    <%= yield %>
+	  <%= render "layouts/header" %>
+
+    <main class ="container">
+      <%= yield %>
+    </main>
+
+    <%= render "layouts/footer" %>
   </body>
+
+  <script>$(".button-collapse").sideNav();</script>
+
 </html>

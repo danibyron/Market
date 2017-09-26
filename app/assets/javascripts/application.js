@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require materialize
-//= require jquery.turbolinks
 //= require jquery_ujs
 //
 // ... your other scripts here ...

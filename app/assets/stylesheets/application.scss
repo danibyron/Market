@@ -1,1 +1,19 @@
 @import "materialize";
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+header {
+	margin-top:-60px;  /*molto volgare*/
+}
+
+.btn-devise{
+	width: 100%;
+}

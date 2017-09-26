@@ -32,6 +32,8 @@ gem 'materialize-sass'
 
 gem 'devise'
 
+gem 'coffee-script-source', '1.8.0'
+
 group :development, :test do
   
   gem 'byebug', platform: :mri
