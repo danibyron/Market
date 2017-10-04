@@ -10,10 +10,12 @@ main {
   flex: 1 0 auto;
 }
 
-header {
-	margin-top:-60px;  /*molto volgare*/
-}
 
 .btn-devise{
 	width: 100%;
+}
+
+.show-titolo{
+	margin-top: 0;
+	font-size: 3em;
 }

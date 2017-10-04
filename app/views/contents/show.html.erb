@@ -1,19 +1,18 @@
 <p id="notice"><%= notice %></p>
+<div class="row">
+	<div class = "col l6">
+		<%= image_tag @content.cover.url, class:"responsive-img" %>
+	</div>
+	<div class ="col l6">
+	<h1 class = "show-titolo"><%= @content.titolo %></h1>
+	<h4>$<%= @content.price %></h4>
+	<p>Venduto da:<%= @content.user.name %></p>
+	<p><%= @content.descrizione %></p>
 
-<p>
-  <strong>Titolo:</strong>
-  <%= @content.titolo %>
-</p>
+	</div>
+	<% if current_user == @content.user %>
+		<%= link_to 'Edit', edit_content_path(@content) %> 
+	<% end %>
+	<%= link_to 'Torna ai contenuti', contents_path %>
 
-<p>
-  <strong>Descrizione:</strong>
-  <%= @content.descrizione %>
-</p>
-
-<p>
-  <strong>Price:</strong>
-  <%= @content.price %>
-</p>
-
-<%= link_to 'Edit', edit_content_path(@content) %> |
-<%= link_to 'Back', contents_path %>
+</div>
