@@ -36,7 +36,11 @@ gem 'coffee-script-source', '1.8.0'
 
 gem "paperclip", "~> 5.0.0"
 
-gem 'bcrypt', '~> 3.1.11'
+#gem 'bcrypt', '~> 3.1.11'
+
+gem 'will_paginate', '~> 3.1.0'
+
+gem 'will_paginate-materialize'
 
 group :development, :test do
   
